@@ -140,5 +140,5 @@ const student = {
 };
 
 // Destructuring assignment
-const {firstName, surname, age, address: {street, number}} = student;
-console.log(firstName, surname, age, street, number);
+const {firstName, surname, age, address: {street, number}} = student
+console.log(firstName, surname, age, street, number)
