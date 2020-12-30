@@ -158,7 +158,6 @@ ll.insertLast(800)
 ll.insertLast(900)
 ll.insertLast(1000)
 
-
 // ll.insertAt(1100, 2)
 
 ll.removeAt(3)
@@ -170,3 +169,43 @@ ll.printListData()
 
 // ll.getAt(7)
 
+class LinkedList2 {
+  constructor() {
+    this.head = null  // First element of the list
+    this.tail = null  // Last element of the list
+  }
+
+  append(value) {
+    const newNode = {value: value, next: null}
+    if (this.tail) {
+      this.tail.next = newNode
+    }
+    this.tail = newNode
+    if (!this.head) {
+      this.head = newNode
+    }
+  }
+
+  toArray() {
+    const elements = []
+
+    let curNode = this.head
+    while (curNode) {
+      elements.push(curNode)
+      curNode = curNode.next
+    }
+
+    return elements
+  }
+}
+
+const linkedList3 = new LinkedList2()
+linkedList3.append('Nikola Tesla')
+linkedList3.append(1914)
+linkedList3.append('Volvo')
+linkedList3.append('Duque')
+linkedList3.append(false)
+linkedList3.append(null)
+linkedList3.append('Engineer')
+
+console.log(linkedList3.toArray())
