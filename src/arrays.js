@@ -165,18 +165,18 @@ for (let key in teacher) {
   console.log(key, teacher[key]);
 }
 
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // for of
-for (let numero of numeros) {
-  if (numero === 2) {
-    console.log("Pulei o numero 2")
+for (let num of nums) {
+  if (num === 2) {
+    console.log("I skipped number 2")
     continue
   }
 
-  console.log(numero)
+  console.log(num)
 
-  if (numero === 7) {
-    console.log("7 encontrado, saindo...")
+  if (num === 7) {
+    console.log("7 found, leaving ...")
     break;
   }
 }
@@ -184,18 +184,18 @@ for (let numero of numeros) {
 console.log("---- **** ----")
 
 // for of
-for (let i of numeros) {
-  let numero = numeros[i]
+for (let i of nums) {
+  let num = nums[i]
 
-  if (numero === 2) {
-    console.log("Pulei o numero 2")
+  if (num === 2) {
+    console.log("I skipped number 2")
     continue
   }
 
-  console.log(numero)
+  console.log(num)
 
-  if (numero === 7) {
-    console.log("7 encontrado, saindo...")
+  if (num === 7) {
+    console.log("7 found, leaving ...")
     break
   }
 }
@@ -203,47 +203,47 @@ for (let i of numeros) {
 console.log("---- **** ----")
 
 // while
-let i = 0
-while (i < numeros.length) {
-  let numero = numeros[i]
+let j = 0
+while (j < nums.length) {
+  let num = nums[j]
 
-  if (numero === 2) {
-    console.log("Pulei o numero 2")
-    i++
+  if (num === 2) {
+    console.log("")
+    j++
     continue
   }
 
-  console.log(numero)
+  console.log(num)
 
-  if (numero === 7) {
-    console.log("7 encontrado, saindo...")
-    i++
+  if (num === 7) {
+    console.log("7 found, leaving ...")
+    j++
     break
   }
 
-  i++
+  j++
 }
 
 console.log("---- **** ----")
 
 // do while
-let n = 0
+let k = 0
 do {
-  let numero = numeros[n]
+  let num = nums[k]
 
-  if (numero === 2) {
-    console.log("Pulei o numero 2")
-    n++
+  if (num === 2) {
+    console.log("I skipped number 2")
+    k++
     continue
   }
 
-  console.log(numero)
+  console.log(num)
 
-  if (numero === 7) {
-    console.log("7 encontrado, saindo...")
-    n++
+  if (num === 7) {
+    console.log("7 found, leaving ...")
+    k++
     break
   }
 
-  n++
-} while (n < numeros.length)
+  k++
+} while (k < nums.length)
